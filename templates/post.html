@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .blog-content {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #222;
+        }
+
+        .subtitle {
+            color: #777;
+            font-size: 18px;
+        }
+
+        .body-text {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <div class="blog-content">
+        <h2>{{req_post['title']}}</h2>
+        <h3 class="subtitle">{{req_post['subtitle']}}</h3>
+        <p class="body-text">{{req_post['body']}}</p>
+    </div>
+
+    <footer>
+        <p>Copyright © 2026 | Built by Vishnu</p>
+    </footer>
+
+</body>
+</html>
